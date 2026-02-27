@@ -1,0 +1,57 @@
+package stringbuffer_stringbuider;
+
+public class MainC {
+	
+	public static void main(String[] args) {
+		
+		// The String Builder and String Buffer methods 
+		// This are mutable and updated the string;
+		
+		String sentence = "India is my country";
+		
+		StringBuilder b = new StringBuilder(sentence);
+		// here we make the string mutable
+		
+		// StringBuffer and Buider are same has same methods and 
+		// Buider is Faster and Buffer is slower in execution
+		// together execution and one by one execution
+		
+		b.append(" And the National Animal of India is Tiger");
+		
+		// In the existing string we added the data and not required to build the new string 
+		
+		
+		System.out.println(b);
+		
+		b.replace(0, 19, "India is beautiful country");
+		System.out.println(b);
+		
+		// we provide the index to change the sentence in that index
+		
+		b.insert(5, " and Austria are");
+		System.out.println(b);
+		
+	
+		System.out.println("Length : " + b.length());
+		
+		System.out.println("Reverse : "+  b.reverse());
+		
+		System.out.println();
+		b.reverse();
+		b.append(" " + true);
+		System.out.println(b);
+		
+		b.setCharAt(10, '@');
+		System.out.println(b);
+		
+		
+		System.out.println(b.capacity());
+		// Gives The capacity means number of character it can store without increasing its original size
+		
+		b.repeat(10, 1);
+		System.out.println(b);
+		
+		
+	}
+
+}
