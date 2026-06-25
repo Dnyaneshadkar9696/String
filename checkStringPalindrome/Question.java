@@ -26,4 +26,6 @@ public class Question {
 		}
 	}
 
+	// we can traverse through each string in array using the two pointer method
+
 }
